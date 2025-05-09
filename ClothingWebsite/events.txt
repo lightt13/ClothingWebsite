@@ -1,0 +1,301 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset-utf=8">
+<title>HomePage.html</title>
+<style type="text/css">
+   body{margin-left:20px;
+margin-right:40px;
+background-image: url(tara1.jfif);
+}
+
+   p{color:black ;
+ font-family: arial;
+font-size: 155%;
+text-align:justify;
+line-height:30px;
+margin-bottom:30px;
+}
+
+@-webkit-keyframes slide_animation{
+   0%{left:1000px;}
+   10%{left:1000px;}
+   20%{left:1275px;}
+   30%{left:1275px;}
+   40%{left:1550px;}
+   50%{left:1550px;}
+   60%{left:1880px;}
+   70%{left:1800px;}
+   80%{left:1000px;}
+   90%{left:1000px;}
+   100%{left:1000px;}
+   
+}
+.slide-images{
+
+   margin: 0 0 0 -1900px;
+   position:relative;
+   -webkit-animation-name:slide_animation;
+   -webkit-animation-duration: 33s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   -webkit-animation-play-state: running;
+}
+img1 {
+   position:absolute;
+   left:5%;
+   top:60%;
+   z-index: -1;
+}
+
+
+
+   
+
+   h4{color:black ;
+font-family: Trebuchet MS,sans-serif;
+font-size: 100%;
+text-align:left;
+}
+
+   h1,h2,h3{text-align:center;
+font-family:arial;}
+   
+   h1, h2, h3{color:white;
+   background-color: black ;
+width:30%
+}
+   h2.items{color:white;
+   background-color: black ;
+width:50%
+}
+   h3.main{text-align:center;
+font-family:arial;
+  color:white;
+  background-color: black ;
+width:106%;
+}
+.slider-frame{
+background-color: black;
+width: 100%;
+height: 80%;
+border: 5px solid black;
+overflow: hidden;
+ 
+}
+   
+   h3.division{
+   text-align:left;
+   color:white;
+   background-color: black ;
+   width:100%
+ }
+ 
+   a.redirect{
+   color:white;
+   border-style:solid;
+   border-color:black;
+   border-width:5px;
+   font-size:150%;
+   text-decoration:none;
+   background-color:black;
+}
+   
+   .redirect:hover{
+   background-color:#4CAF50;
+}
+  
+
+   img.image1 {
+   position:absolute;
+   left:6%;
+   top:1%;
+   z-index: -1;
+}
+  
+   .slider-frame img{
+   transition: 1s;
+   padding: 15px;
+   width: 200px;
+}
+   .slider-frame img:hover{
+   transform: scale(1.1);
+}
+
+   img.image2{
+   width: 25%;
+   height: 250px;
+   
+   
+   
+}
+   img:hover{
+   opacity: 1.0;
+   filter: alpha(opacity=100)
+}
+   li {
+display: inLine;
+float:right;
+}
+  .section{color:white;
+   background-color: black ;
+width:50%
+ 
+  }
+   .active {
+  background-color: #4CAF50;
+}
+
+   li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 13px 20px;
+  text-decoration: none;
+  background-color:black;
+}
+   li a:hover{
+ background-color: #4CAF50;
+}
+ a.king:hover{
+  background-color: #4CAF50;
+  }
+  a.king {
+  color: white;
+  text-align: left;
+  padding: 13px 20px;
+  text-decoration: none;
+  background-color:black;
+}
+.image3{
+height:100%;
+width:200%;
+float:left;
+}
+ 
+</style>
+</head>
+<body>
+<a id="top"></a>
+<header>
+<img class="image1" src="black.jpg"  alt="Company Logo" 
+height="130" width="250" />
+
+<br />
+<center>
+<h1 style="color:white;font-family:arial">BLACK.</h1>
+</center>
+</header>
+<br />
+<nav>
+<h3 class="main">
+   <ul>
+	 <li><a href="ContactUs.html">C O N T A C T U S</a></li>
+	 <li><a href="Testimonials.html">T E S T I M O N I A L S</a></li>
+     <li><a href="Gallery.html">G A L L E R Y</a></li>
+	 <li><a href="kids.html">K I D S</a></li>
+	 <li><a class="active" href="shirtsandpants.html">S H I R T S & P A N T S</a></li>
+     <li><a href="adult.html">A D U L T</a></li>
+     <li><a href="Cano_ex04.html">A B O U T U S</a></li>
+
+   </ul>
+</h3>
+</nav>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<center><h2 class="items">C O L L E C T I O N S</h2></center>
+
+<div class="slider-frame">
+  <div class="slide-images">
+         <img class="image3" src="shirtsandpants.jpg" alt="blackunderwear"></a>
+         <img class="image3" src="shirtsandpants5.jpg" alt="blackunderwear"></a>
+         <img class="image3" src="shirtsandpants2.jfif" alt="blackunderwear"></a>
+         <img class="image3" src="shirtsandpants6.jfif" alt="blackunderwear"></a>
+         <img class="image3" src="shirtsandpants4.jfif" alt="blackunderwear"></a>
+         <img class="image3" src="shirtsandpants3.jfif" alt="blackunderwear"></a>
+         <img class="image3" src="shirtsandpants7.jfif" alt="blackunderwear"></a>
+         <img class="image3" src="shirtsandpants8.jfif" alt="onepiece"></a>
+		 <img class="image3" src="shirtsandpants9.jfif" alt="blackunderwear"></a>
+
+
+  </div>
+</div>
+<section>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<center>
+<div>
+      <center><h1 class="section" style="clear:both">SHIRTS / WOMEN</h1></center>
+      <img class="image2" src="blackshirt.jpg" alt="blackunderwear"></a>
+      <a href="winterwear.jpg"><img class="image2" src="blackshirt2.jpg" alt="winterclothes"></a>
+	  <a href="sassy.jpg"><img class="image2" src="blackshirt3.jfif" alt="winterclothes"></a>
+	  <a href="sass2.jpg"><img class="image2" src="blackshirt4.jpg" alt="winterclothes"></a>
+	  <a href="sassy1.jpg"><img class="image2" src="blackshirt5.jpg" alt="winterclothes"></a>  
+      <center><h1 class="section" style="clear:both">PANTS / WOMEN</h1></center>
+	  <a href="summer.jfif"><img class="image2" src="blackpants.jfif" alt="summerclothes"></a>
+	  <a href="summerwear.jfif"><img class="image2" src="blackpants2.webp" alt="summerclothes"></a>
+	  <a href="summerna.jpg"><img class="image2" src="blackpants3.jpg" alt="summerclothes"></a>
+	  <a href="wow.jpg"><img class="image2" src="blackpants4.jfif" alt="summerclothes"></a>
+	  <a href="lezgo.jfif"><img class="image2" src="blackpants5.jpg" alt="summerclothes"></a>
+      <center><h1 class="section" style="clear:both">SHIRTS - MEN</h1></center>
+	  <a href="Mansuit1.jpg"><img class="image2" src="blackshirts.jfif" alt="sportclothes"></a>
+	  <a href="formalwear.jfif"><img class="image2" src="blackshirts2.webp" alt="formalclothes"></a>
+	  <a href="formal.jfif"><img class="image2" src="blackshirts3.jpeg" alt="formalclothes"></a>
+	  <a href="formalg.jpg"><img class="image2" src="blackshirts4.jpg" alt="formalclothes"></a>
+	  <a href="formalg1.jpg"><img class="image2" src="blackshirts5.jpg" alt="formalclothes"></a>
+      <center><h1 class="section" style="clear:both">PANTS - MEN</h1></center>
+	  <a href="sport.jpg"><img class="image2" src="blackpantsmen.jpg" alt="sportclothes"></a>
+	  <a href="sporty.jpg"><img class="image2" src="blackpantsmen2.webp" alt="sportclothes"></a>
+	  <a href="sportwear.jpg"><img class="image2" src="blackpantsmen3.jpg" alt="sportclothes"></a>
+	  <a href="sportwear101.jpg"><img class="image2" src="blackpantsmen4.jpg" alt="sportclothes"></a>
+	  <a href="sportyweary.jfif"><img class="image2" src="blackpantsmen5.jfif" alt="sportclothes"></a>
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	  <br />	  
+
+  
+</div>
+</center>
+	  <br />
+
+
+
+<a class="king" href="#top">Back to Top </a>
+
+</section>
+<footer>
+<br />
+<br />
+<hr size="5" color="black">
+@Copyright 2021. All Rights Reserved.
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>

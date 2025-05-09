@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>	
+body{margin-left:20px;
+margin-right:40px;
+background-image: url(tara1.jfif);
+}
+   li {
+display: inLine;
+}
+   li{
+float:right;
+}
+   .active {
+  background-color: #4CAF50;
+}
+  h3.main{text-align:center;
+  font-family:arial;
+  color:white;
+  background-color: black ;
+  width:106%;
+}
+  h1{
+  color:white;
+  background-color: black ;
+  width:30%;
+}
+   li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 13px 20px;
+  text-decoration: none;
+  background-color:black;
+  width:105%;
+}
+   li a:hover{
+ background-color: #4CAF50;
+}
+  
+* {
+  box-sizing: border-box;
+}
+  h2,h3{text-align:center;
+font-family:arial;
+}
+
+  h2{
+  color:white;
+  background-color: black ;
+width:30%;
+}
+  img.blackimage  {
+   position:absolute;
+   width: 250px;
+   left:6%;
+   top:1%;
+   z-index: -1;
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left:0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0	;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black	;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+div.row{ background-image: url(tara1.jfif);
+text-align:center;
+background-color: white;
+width: 80%;
+height: 250%;
+padding: 50px;
+border: 10px solid navy;
+margin: 5px;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+:root{
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #40c9a2;
+    --gray: #ededed;
+}
+
+/* Utility stylings */
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    width: 88vw;
+    margin: 0 auto;
+}
+.lg-title,
+.md-title,
+.sm-title{
+    font-family: 'Roboto', sans-serif;
+    padding: 0.6rem 0;
+    text-transform: capitalize;
+}
+.lg-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1.3rem 0;
+    opacity: 0.9;
+}
+.md-title{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.sm-title{
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.text-light{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    opacity: 0.5;
+    margin: 0.4rem 0;
+}
+
+/* product section */
+.products{
+    background: var(--alice-blue);
+    padding: 3.2rem 0;
+}
+.products .text-light{
+    text-align: center;
+    width: 70%;
+    margin: 0.9rem auto;
+}
+.product{
+    margin: 2rem;
+    position: relative;
+}
+.product-content{
+    background: var(--gray);
+    padding: 3rem 0.5rem 2rem 0.5rem;
+    cursor: pointer;
+}
+.product-img{
+    background: var(--white-light);
+    box-shadow: 0 0 20px 10px var(--white-light);
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: background 0.5s ease;
+}
+.product-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+.btn-cart, .btn-buy{
+    background: transparent;
+    border: 1px solid black;
+    padding: 0.8rem 0;
+    width: 125px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.6s ease;
+}
+.btn-cart{
+    background: black;
+    color: white;
+}
+.btn-cart:hover{
+    background: var(--carribean-green);
+}
+.btn-buy{
+    background: white;
+}
+.btn-buy:hover{
+    background: var(--carribean-green);
+    color: #fff;
+}
+.product-info{
+    background: white;
+    padding: 2rem;
+}
+.product-info-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating span{
+    color: var(--carribean-green);
+}
+.product-name{
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-price{
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+    display: inline-block;
+}
+.product-price:first-of-type{
+    text-decoration: line-through;
+    color: var(--carribean-green);
+}
+.product-img img{
+    transition: transform 0.6s ease;
+}
+.product:hover .product-img img{
+    transform: scale(1.1);
+}
+.product:hover .product-img{
+    background: var(--carribean-green);
+}
+.product:hover .product-btns{
+    opacity: 1;
+}
+.off-info .sm-title{
+    background: var(--carribean-green);
+    color: white;
+    display: inline-block;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    z-index: 1;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+/* product collection */
+.product-collection{
+    padding: 3.2rem 0;
+}
+.product-collection-wrapper{
+    padding: 3.2rem 0;
+}
+.product-col-left{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("productpics/pic1.png") center/cover no-repeat;
+}
+.product-col-r-top{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url("productpics/pic2.png") center/cover no-repeat;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50vh;
+    padding: 2rem 1.5rem 3.2rem;
+    margin: 5px;
+}
+.product-col-r-bottom > div:first-child{
+    background: #eaa001;
+}
+.product-col-r-bottom > div:last-child{
+    background: #0090ff;
+}
+.product-col-content{
+    text-align: center;
+    color: white;
+}
+.product-collection .text-light{
+    opacity: 1;
+    font-size: 0.8;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.btn-dark{
+    background: black;
+    color: white;
+    outline: 0;
+    border-radius: 25px;
+    padding: 0.7rem 1rem;
+    border: 0;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    font-size: 1rem;
+    font-family: inherit;
+}
+.btn-dark:hover{
+    background: var(--carribean-green);
+}
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (min-width: 992px){
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-col-r-bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px){
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .products .text-light{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1336px){
+    .product-items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .product-collection-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex{
+        height: 60vh;
+    }
+    .product-col-left{
+        height: 121.5vh;
+    }
+}
+</style>
+<body>
+<header>
+<img class="blackimage" src="black.jpg"  alt="Company Logo" 
+height="130" width="250" />
+<center>
+<br />
+<h1 style="color:white;font-family:arial">BLACK.</h1>
+</center>
+</header>
+<br />
+<nav>
+<h3 class="main">
+   <ul>
+	 <li><a href="ContactUs.html">CONTACT US</a></li>
+	 <li><a href="Testimonials.html">TESTIMONIALS</a></li>
+     <li><a class="active" href="Gallery.html">SHOP</a></li>
+	 <li><a href="kids.html">KIDS</a></li>
+	 <li><a href="shirtsandpants.html">SHIRTS & PANTS</a></li>
+     <li><a href="adult.html">ADULT</a></li>
+	 <li><a href="events.html">EVENTS</a></li>
+     <li><a href="Cano_ex04.html">ABOUT US</a></li>
+
+   </ul>
+</h3>
+</nav>
+<br />
+<br />
+<br />
+<br />
+<center>
+<h2 style="text-align:center">SHOP NOW!!!</h2>
+
+ <div class = "products">
+            <div class = "container">
+                <h1 class = "lg-title">WOMEN'S SECTION</h1>
+                <p class = "text-light">Clothing available for all age and sizes!</p>
+
+                <div class = "product-items">
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackshirt.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title"> WOMENS </h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Black Shirt</a>
+                            <p class = "product-price">$ 20.00</p>
+                            <p class = "product-price">$ 10.00</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "winterwear.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">WOMENS</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Black Coat</a>
+                            <p class = "product-price">$ 150.00</p>
+                            <p class = "product-price">$ 133.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackshirt3.jfif" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">WOMENS</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Slim Fit BLACK shirt</a>
+                            <p class = "product-price">$ 50.00</p>
+                            <p class = "product-price">$ 40.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackshirt4.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">WOMEN</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Black Formal Wear</a>
+                            <p class = "product-price">$ 00.00</p>
+                            <p class = "product-price">$ 50.00</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackpants.jfif" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">WOMEN</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Black Pants</a>
+                            <p class = "product-price">$ 70.00</p>
+                            <p class = "product-price">$ 30.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackpants2.webp" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">WOMEN</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">BLACK Formal Pants</a>
+                            <p class = "product-price">$ 100.00</p>
+                            <p class = "product-price">$ 50.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackpants3.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">WOMEN</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Casual Pants</a>
+                            <p class = "product-price">$ 30.00</p>
+                            <p class = "product-price">$ 20.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackpants4.jfif" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">WOMEN</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Military Pants</a>
+                            <p class = "product-price">$ 70.00</p>
+                            <p class = "product-price">$ 50.00</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">35% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+					
+                </div>
+            </div>
+			
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			<div class = "container">
+                <h1 class = "lg-title">MEN'S SECTION</h1>
+                <p class = "text-light">Clothing available for all age and sizes!</p>
+
+                <div class = "product-items">
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackshirts.jfif" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title"> MEN </h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Polo</a>
+                            <p class = "product-price">$ 50.00</p>
+                            <p class = "product-price">$ 30.00</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackshirts2.webp" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">MEN</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Dual cleave shirt</a>
+                            <p class = "product-price">$ 140.00</p>
+                            <p class = "product-price">$ 100.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackshirts3.jpeg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">MEN</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Priest POLO</a>
+                            <p class = "product-price">$ 50.00</p>
+                            <p class = "product-price">$ 40.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackshirts4.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">MEN</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">SHIRt</a>
+                            <p class = "product-price">$ 20.00</p>
+                            <p class = "product-price">$ 15.00</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackpantsmen.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">MEN</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Black Pants</a>
+                            <p class = "product-price">$ 50.00</p>
+                            <p class = "product-price">$ 30.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackpantsmen2.webp" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">MEN</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Military Pants</a>
+                            <p class = "product-price">$ 70.00</p>
+                            <p class = "product-price">$ 50.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackpantsmen3.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">MEN</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Double Belt Pants</a>
+                            <p class = "product-price">$ 50.00</p>
+                            <p class = "product-price">$ 30.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "blackpantsmen4.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">MEN</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Fitted Pants</a>
+                            <p class = "product-price">$ 50.00</p>
+                            <p class = "product-price">$ 30.00</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">35% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+					
+                </div>
+            </div>
+			
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			<div class = "container">
+                <h1 class = "lg-title">KIDS SECTION</h1>
+                <p class = "text-light">Clothing available for all age and sizes!</p>
+
+                <div class = "product-items">
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "hoodies2.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title"> KIDS </h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">KITTIE HOODIE</a>
+                            <p class = "product-price">$ 50.00</p>
+                            <p class = "product-price">$ 30.00</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "hoodies3.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Kids</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Dual cleave shirt</a>
+                            <p class = "product-price">$ 140.00</p>
+                            <p class = "product-price">$ 100.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "tracksuit.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">Kids</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">School Style tracksuit</a>
+                            <p class = "product-price">$ 30.00</p>
+                            <p class = "product-price">$ 20.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "tracksuit2.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">KIDS</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">ADIDDAS TRACKSUIT</a>
+                            <p class = "product-price">$ 20.00</p>
+                            <p class = "product-price">$ 15.00</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "formal.jfif" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">KIDS</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Beauty and the Beast Dress</a>
+                            <p class = "product-price">$ 50.00</p>
+                            <p class = "product-price">$ 30.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "formal2.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">KIDS</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Kids Suit</a>
+                            <p class = "product-price">$ 100.00</p>
+                            <p class = "product-price">$ 70.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "casual.webp" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">KIDS</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">CASUAL</a>
+                            <p class = "product-price">$ 20.00</p>
+                            <p class = "product-price">$ 10.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "casual2.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">KIDS</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Leather</a>
+                            <p class = "product-price">$ 70.00</p>
+                            <p class = "product-price">$ 40.00</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">35% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+					
+                </div>
+            </div>
+			
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			<div class = "container">
+                <h1 class = "lg-title">ADULT SECTION</h1>
+                <p class = "text-light">UNDERWEAR SEEN HERE ! ! ! </p>
+
+                <div class = "product-items">
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "underwearblack.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title"> ADULT </h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">PANTIES</a>
+                            <p class = "product-price">$ 20.00</p>
+                            <p class = "product-price">$ 10.00</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "twopiece.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">adult</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Dual cleave shirt</a>
+                            <p class = "product-price">$ 30.00</p>
+                            <p class = "product-price">$ 20.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "underwearmen.webp" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">adult</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">BRIEF</a>
+                            <p class = "product-price">$ 40.00</p>
+                            <p class = "product-price">$ 30.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "underwearmen2.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">ADULT</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">BOXERS</a>
+                            <p class = "product-price">$ 00.00</p>
+                            <p class = "product-price">$ 10.00</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "beachwear1.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">adult</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Slimfit Beachwear</a>
+                            <p class = "product-price">$ 70.00</p>
+                            <p class = "product-price">$ 50.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "beachwear3.png" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">ADULT</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">Women's Beach Wear</a>
+                            <p class = "product-price">$ 70.00</p>
+                            <p class = "product-price">$ 50.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "beachwearmen2.jpg" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">ADULT</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">MENS BEACH SHORTS</a>
+                            <p class = "product-price">$ 50.00</p>
+                            <p class = "product-price">$ 40.00</p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "beachwearmen4.jfif" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title">adult</h2>
+                                <div class = "rating">
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "fas fa-star"></i></span>
+                                    <span><i class = "far fa-star"></i></span>
+                                </div>
+                            </div>
+                            <a href = "#" class = "product-name">TANK TOP</a>
+                            <p class = "product-price">$ 40.00</p>
+                            <p class = "product-price">$ 20.00</p>
+                        </div>
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">50% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+					
+                </div>
+            </div>
+			
+			
+			
+        </div>
+
+
+
+<footer>
+<br />
+<br />
+<hr />
+@Copyright 2021. All Rights Reserved.
+</footer>
+    
+</body>
+</html>
